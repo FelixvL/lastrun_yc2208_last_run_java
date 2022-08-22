@@ -1,15 +1,16 @@
-class Demo{   // QF
+class Demo{   // QG
 	public static void main(String[] args){
 		System.out.println("Hij doet het");
-		Jas jas = new Jas();
+		Kleding jas = new Jas();
 		System.out.println(jas.prijs);
+		jas.knopen();
 
 	}	
 }
 
 
 class Jas extends Kleding{
-	int knoop = knopen();
+	int knoop = 55;
 	int knopen(){
 		System.out.println("in knopen");
 		return 17;
@@ -24,5 +25,9 @@ class Kleding{
 	Kleding(int getal){
 		System.out.println("In Kleding");
 		prijs = getal;
+	}
+	int knopen(){
+		System.out.println("in knopen kleding");
+		return 18;
 	}
 }
