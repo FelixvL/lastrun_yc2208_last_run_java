@@ -1,4 +1,4 @@
-class Demo{   // QB
+class Demo{   // QC
 	public static void main(String[] args){
 		System.out.println("Hij doet het");
 		Jas jas = new Jas();
@@ -8,7 +8,7 @@ class Demo{   // QB
 
 
 class Jas{
-	static int knoop = knopen();
+	int knoop = knopen();
 	static int knopen(){
 		System.out.println("in knopen");
 		return 17;
