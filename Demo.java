@@ -1,7 +1,7 @@
-class Demo{   // QG
+class Demo{   // QH
 	public static void main(String[] args){
 		System.out.println("Hij doet het");
-		Kleding jas = new Jas();
+		Kleding jas = new Kleding();
 		System.out.println(jas.prijs);
 		jas.knopen();
 
