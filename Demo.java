@@ -1,24 +1,24 @@
-class Demo{   // MC
+class Demo{   // MD
 	public static void main(String[] args){
 		System.out.println("a");
-		R b = new R();
+		B b = new R();
 		b.ben();
 
 	}	
 }
 
 
-class B{
+class B{     
 	int b;
-	void ben() throws Exception{
+	void ben() throws Exception{  
 		System.out.println("Ben toch");
 		throw new Exception();	
 	}
 }
 
-class R extends B{
+class R extends B{       
 	int b = 30;
-	void ben(){
+	void ben(){    
 		System.out.println("wtf");
 	}
 
