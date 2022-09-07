@@ -1,7 +1,7 @@
-class Demo{   // UQ
+class Demo{   // UR
 	public static void main(String[] args){
 		Fiets f = new Fiets();
-		Fiets f2 = f;
+		Fiets f2 = new Fiets();
 		lopen(f);
 		System.out.println("einde" + f2.a);
 	}
