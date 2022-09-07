@@ -1,14 +1,15 @@
-class Demo{   // UU
+class Demo{   // UW
 	public static void main(String[] args){
 		FietsenMaker piet = new FietsenMaker();
 		Fiets f = piet.maken(60);
-		Fiets f = piet.maken(40);
+		f = piet.maken(40);
 		System.out.println("einde" + f.snelheid);
 	}
 }
 class FietsenMaker{
-	Fiets maken(int q){
-		Fiets t = new Fiets();
+	Fiets t = new Fiets();
+
+	Fiets maken(int q){	
 		t.snelheid += q + 10;
 		return t;
 	}
