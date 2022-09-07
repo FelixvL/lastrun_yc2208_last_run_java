@@ -1,8 +1,7 @@
-class Demo{   // UW
+class Demo{   // UX
 	public static void main(String[] args){
-		FietsenMaker piet = new FietsenMaker();
-		Fiets f = piet.maken(60);
-		f = piet.maken(40);
+		Fiets f = new MountainBike();
+		f.fietsen();
 		System.out.println("einde" + f.snelheid);
 	}
 }
@@ -17,4 +16,13 @@ class FietsenMaker{
 
 class Fiets{
 	int snelheid = 5;
+	void fietsen(){
+		System.out.println("f in f");
+	}
+}
+class MountainBike extends Fiets{
+	int snelheid = 15;
+	void fietsen(){
+		System.out.println("f in mb");
+	}
 }
