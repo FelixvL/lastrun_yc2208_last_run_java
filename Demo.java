@@ -1,27 +1,12 @@
-class Demo{   // MD
+class Demo{   // UM
 	public static void main(String[] args){
-		System.out.println("a");
-		B b = new R();
-		b.ben();
-
-	}	
-}
-
-
-class B{     
-	int b;
-	void ben() throws Exception{  
-		System.out.println("Ben toch");
-		throw new Exception();	
+		float a = 50.3f;
+		System.out.println(a);
+		lopen(a);
 	}
-}
-
-class R extends B{       
-	int b = 30;
-	void ben(){    
-		System.out.println("wtf");
+	void lopen(double x){
+		System.out.println("we zijn hier");
 	}
-
 }
 
 
