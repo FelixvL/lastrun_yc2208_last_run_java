@@ -1,12 +1,16 @@
-class Demo{   // UM
+class Demo{   // UN
 	public static void main(String[] args){
-		float a = 50.3f;
-		System.out.println(a);
-		lopen(a);
+		Fiets f = new Fiets();
+		lopen(f);
+		System.out.println("einde");
 	}
-	void lopen(double x){
+	static void lopen(Object x){
 		System.out.println("we zijn hier");
 	}
 }
 
 
+class Fiets{
+
+
+}
