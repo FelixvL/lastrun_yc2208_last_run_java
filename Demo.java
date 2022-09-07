@@ -1,23 +1,18 @@
-class Demo{   // UR
+class Demo{   // UT
 	public static void main(String[] args){
-		Fiets f = new Fiets();
-		Fiets f2 = new Fiets();
-		lopen(f);
-		System.out.println("einde" + f2.a);
+		FietsenMaker piet = new FietsenMaker();
+		Fiets f = piet.maken(60);
+		System.out.println("einde" + f.snelheid);
 	}
-	static void lopen(Fiets x){
-		x.a = 25;
-		System.out.println("we zijn hier");
+}
+class FietsenMaker{
+	Fiets maken(int q){
+		Fiets t = new Fiets();
+		t.snelheid = q + 10;
+		return t;
 	}
 }
 
-
 class Fiets{
-	int a = hoi();
-
-	static int hoi(){
-		System.out.println("hoi");
-		return 7;
-	}
-
+	int snelheid;
 }
