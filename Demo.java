@@ -1,6 +1,7 @@
-class Demo{   // UN
+class Demo{   // UP
 	public static void main(String[] args){
 		Fiets f = new Fiets();
+		Fiets f2 = new Fiets();
 		lopen(f);
 		System.out.println("einde");
 	}
@@ -11,6 +12,11 @@ class Demo{   // UN
 
 
 class Fiets{
+	int a = hoi();
 
+	static int hoi(){
+		System.out.println("hoi");
+		return 7;
+	}
 
 }
